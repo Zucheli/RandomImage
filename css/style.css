@@ -1,0 +1,13 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 3180px;
+    background-image: url("../assets/background.png");
+}
+
+.logo {
+    padding: 10px 70px;
+}
