@@ -93,7 +93,11 @@ body {
 .image-normal {
   width: 900px;
   height: 600px;
-  background-color: #333533;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px #333533aa;
+  background-color: rgba(51, 53, 51, 0.9);
 }
 
 /*----------------------------------------Card-Blur----------------------------------------*/
@@ -132,7 +136,11 @@ body {
 .image-blur {
   width: 900px;
   height: 600px;
-  background-color: #333533;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px #333533aa;
+  background-color: rgba(51, 53, 51, 0.9);
 }
 
 /*----------------------------------------Card-Gray----------------------------------------*/
@@ -142,6 +150,17 @@ body {
   align-items: center;
   justify-content: right;
   grid-template: auto / auto auto;
+}
+
+/*------------------------------Image-Gray------------------------------*/
+.image-gray {
+  width: 900px;
+  height: 600px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 5px 10px #333533aa;
+  background-color: rgba(51, 53, 51, 0.9);
 }
 
 /*------------------------------Title-Gray------------------------------*/
@@ -163,8 +182,8 @@ body {
 }
 
 .title-gray .third {
-  font-family: "Anton", sans-serif;
   font-size: 40px;
+  font-family: "Anton", sans-serif;
 }
 
 .title-gray .fourth {
@@ -180,8 +199,8 @@ body {
 }
 
 .title-gray .seventh {
-  font-family: "Anton", sans-serif;
   font-size: 40px;
+  font-family: "Anton", sans-serif;
 }
 
 .title-gray .eighth {
@@ -192,9 +211,171 @@ body {
   font-family: "Marmelad", sans-serif;
 }
 
-/*------------------------------Image-Gray------------------------------*/
-.image-gray {
-  width: 900px;
-  height: 600px;
+/*----------------------------------------Footer----------------------------------------*/
+footer {
+  width: 600px;
+  height: 60px;
+  display: grid;
+  margin: 100px auto;
+  align-items: center;
+  justify-content: center;
   background-color: #333533;
+  box-shadow: 5px 5px 10px #333533aa;
+}
+
+/*------------------------------Text-Footer------------------------------*/
+.text-footer {
+  color: #e8eddf;
+  word-spacing: -3px;
+}
+
+/*------------------------------First-Part------------------------------*/
+.first-part {
+  margin: 0px 10px 0px 0px;
+}
+
+.first-part .first {
+  font-size: 35px;
+  font-family: "Sen", sans-serif;
+}
+
+.first-part .second {
+  font-family: "Marmelad", sans-serif;
+}
+
+.first-part .third {
+  font-family: "Aclonica", sans-serif;
+}
+
+.first-part .fourth {
+  font-family: "Marmelad", sans-serif;
+}
+
+.first-part .fifth {
+  font-size: 30px;
+  font-family: "Sevillana", cursive;
+}
+
+.first-part .sixth {
+  font-family: "Rye", cursive;
+}
+
+.first-part .seventh {
+  font-family: "Share Tech", sans-serif;
+}
+
+.first-part .eighth {
+  font-family: "Andada", serif;
+}
+
+.first-part .ninth {
+  font-family: "Rye", cursive;
+}
+
+.first-part .tenth {
+  font-family: "Pridi", serif;
+}
+
+.first-part .eleventh {
+  font-family: "Sen", sans-serif;
+}
+
+.first-part .twelfth {
+  font-family: "Share Tech", sans-serif;
+}
+
+/*------------------------------Second-Part------------------------------*/
+.second-part {
+  margin: 0px 10px 0px 10px;
+}
+
+.second-part .first {
+  font-family: "Stalinist One", cursive;
+}
+
+.second-part .second {
+  font-family: "Share Tech", sans-serif;
+}
+
+.second-part .third {
+  font-family: "Sonsie One", cursive;
+}
+
+/*------------------------------Link------------------------------*/
+a {
+  color: #e8eddf;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*------------------------------Third-Part------------------------------*/
+.third-part {
+  margin: 0px 10px 0px 10px;
+}
+
+.third-part .first {
+  font-size: 40px;
+  font-family: "Podkova", serif;
+}
+
+.third-part .second {
+  font-size: 20px;
+  font-family: "Anton", sans-serif;
+}
+
+.third-part .third {
+  font-family: "Crete Round", serif;
+}
+
+.third-part .fourth {
+  font-family: "Marmelad", sans-serif;
+}
+
+.third-part .fifth {
+  font-family: "Wellfleet", cursive;
+}
+
+.third-part .sixth {
+  font-family: "Aclonica", sans-serif;
+}
+
+/*------------------------------Fourth-Part------------------------------*/
+.fourth-part {
+  margin: 0px 0px 0px 5px;
+}
+
+.fourth-part .first {
+  font-size: 40px;
+  font-family: "Vampiro One", cursive;
+}
+
+.fourth-part .second {
+  font-family: "Wellfleet", cursive;
+}
+
+.fourth-part .third {
+  font-family: "Wellfleet", cursive;
+}
+
+.fourth-part .fourth {
+  font-family: "Strait", sans-serif;
+}
+
+.fourth-part .fifth {
+  font-family: "Marmelad", sans-serif;
+}
+
+.fourth-part .sixth {
+  font-family: "Andada", serif;
+}
+
+.fourth-part .seventh {
+  font-family: "Pridi", serif;
+}
+
+.fourth-part .eighth {
+  font-family: "Sevillana", cursive;
 }
