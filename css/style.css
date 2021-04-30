@@ -1,6 +1,7 @@
 /*--------------------------------------------------Fonts--------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Aldrich&family=Andada&family=Anton&family=Concert+One&family=Crete+Round&family=Marmelad&family=Nunito:wght@300&family=Oregano&family=Podkova&family=Pridi:wght@300&family=Roboto:wght@300&family=Rye&family=Sen&family=Sevillana&family=Share+Tech&family=Sonsie+One&family=Stalinist+One&family=Strait&family=Vampiro+One&family=Wellfleet&family=Yeseva+One&display=swap");
 
+/*--------------------------------------------------Import-Fonts--------------------------------------------------*/
 /* 
 font-family: 'Aclonica', sans-serif;
 font-family: 'Aldrich', sans-serif;
@@ -41,11 +42,11 @@ body {
   display: block;
 }
 
-#button-top {
+.button-top {
+  right: 20px;
+  bottom: 10px;
   display: block;
   position: fixed;
-  bottom: 10px;
-  right: 20px;
 }
 
 /*----------------------------------------Header----------------------------------------*/
@@ -57,6 +58,11 @@ header {
 /*------------------------------Logo------------------------------*/
 .logo {
   padding: 10px 70px;
+}
+
+/*------------------------------Refresh------------------------------*/
+.refresh {
+  margin-left: 300px;
 }
 
 /*----------------------------------------Card-Normal----------------------------------------*/
@@ -226,14 +232,24 @@ header {
 
 /*----------------------------------------Footer----------------------------------------*/
 footer {
-  width: 600px;
+  width: 1000px;
   height: 60px;
   display: grid;
   margin: 100px auto;
   align-items: center;
   justify-content: center;
-  background-color: #333533;
   box-shadow: 5px 5px 10px #333533aa;
+  background-color: rgba(51, 53, 51, 0.9);
+}
+
+/*------------------------------Link------------------------------*/
+a {
+  color: #e8eddf;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5cb5c;
 }
 
 /*------------------------------Text-Footer------------------------------*/
@@ -243,8 +259,9 @@ footer {
 }
 
 /*------------------------------First-Part------------------------------*/
+/*------------------------------DEVELOPED------------------------------*/
 .first-part {
-  margin: 0px 10px 0px 0px;
+  margin: 0px 5px 0px 0px;
 }
 
 .first-part .first {
@@ -285,21 +302,10 @@ footer {
   font-family: "Rye", cursive;
 }
 
-.first-part .tenth {
-  font-family: "Pridi", serif;
-}
-
-.first-part .eleventh {
-  font-family: "Sen", sans-serif;
-}
-
-.first-part .twelfth {
-  font-family: "Share Tech", sans-serif;
-}
-
 /*------------------------------Second-Part------------------------------*/
+/*------------------------------BY------------------------------*/
 .second-part {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
 }
 
 .second-part .first {
@@ -310,23 +316,10 @@ footer {
   font-family: "Share Tech", sans-serif;
 }
 
-.second-part .third {
-  font-family: "Sonsie One", cursive;
-}
-
-/*------------------------------Link------------------------------*/
-a {
-  color: #e8eddf;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
 /*------------------------------Third-Part------------------------------*/
+/*------------------------------MATEUS------------------------------*/
 .third-part {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 5px 0px 5px;
 }
 
 .third-part .first {
@@ -356,8 +349,9 @@ a:hover {
 }
 
 /*------------------------------Fourth-Part------------------------------*/
+/*------------------------------ZUCHELI------------------------------*/
 .fourth-part {
-  margin: 0px 0px 0px 5px;
+  margin: 0px 5px 0px 5px;
 }
 
 .fourth-part .first {
@@ -389,6 +383,133 @@ a:hover {
   font-family: "Pridi", serif;
 }
 
-.fourth-part .eighth {
+/*------------------------------Fifth-Part------------------------------*/
+/*------------------------------USING------------------------------*/
+.fifth-part {
+  margin: 0px 5px 0px 5px;
+}
+
+.fifth-part .first {
+  font-family: "Wellfleet", cursive;
+}
+
+.fifth-part .second {
+  font-family: "Aclonica", sans-serif;
+}
+
+.fifth-part .third {
+  font-family: "Pridi", serif;
+}
+
+.fifth-part .fourth {
+  font-size: 30px;
   font-family: "Sevillana", cursive;
+}
+
+.fifth-part .fifth {
+  font-family: "Nunito", sans-serif;
+}
+
+/*------------------------------Sixth-Part------------------------------*/
+/*------------------------------THE------------------------------*/
+.sixth-part {
+  margin: 0px 5px 0px 5px;
+}
+
+.sixth-part .first {
+  font-family: "Crete Round", serif;
+}
+
+.sixth-part .second {
+  font-family: "Strait", sans-serif;
+}
+
+.sixth-part .third {
+  font-family: "Marmelad", sans-serif;
+}
+
+/*------------------------------Seventh-Part------------------------------*/
+/*------------------------------LOREM------------------------------*/
+.seventh-part {
+  margin: 0px 5px 0px 5px;
+}
+
+.seventh-part .first {
+  font-size: 40px;
+  font-family: "Andada", serif;
+}
+
+.seventh-part .second {
+  font-family: "Rye", cursive;
+}
+
+.seventh-part .third {
+  font-family: "Sonsie One", cursive;
+}
+
+.seventh-part .fourth {
+  font-family: "Marmelad", sans-serif;
+}
+
+.seventh-part .fifth {
+  font-size: 30px;
+  font-family: "Podkova", serif;
+}
+
+/*------------------------------Eighth-Part------------------------------*/
+/*------------------------------PICSUM------------------------------*/
+.eighth-part {
+  margin: 0px 5px 0px 5px;
+}
+
+.eighth-part .first {
+  font-size: 40px;
+  font-family: "Share Tech", sans-serif;
+}
+
+.eighth-part .second {
+  font-family: 'Pridi', serif;
+}
+
+.eighth-part .third {
+  font-size: 30px;
+  font-family: "Concert One", cursive;
+}
+
+.eighth-part .fourth {
+  font-family: "Aclonica", sans-serif;;
+}
+
+.eighth-part .fifth {
+  font-family: "Wellfleet", cursive;
+}
+
+.eighth-part .sixth {
+  font-size: 30px;
+  font-family: "Podkova", serif;
+}
+
+/*------------------------------Ninth-Part------------------------------*/
+/*------------------------------API!------------------------------*/
+.ninth-part {
+  margin: 0px 0px 0px 5px;
+}
+
+.ninth-part .first {
+  font-size: 25px;
+  font-family: "Anton", sans-serif;
+}
+
+.ninth-part .second {
+  font-size: 30px;
+  font-family: "Share Tech", sans-serif;
+}
+
+.ninth-part .third {
+  font-size: 30px;
+  font-family: "Pridi", serif;
+}
+
+.ninth-part .fourth {
+  font-size: 35px;
 }
