@@ -33,7 +33,6 @@ font-family: 'Yeseva One', cursive;
 }
 
 body {
-  height: 3180px;
   background-image: url("../assets/background.png");
 }
 
@@ -55,6 +54,7 @@ header {
   align-items: center;
   grid-template: auto / auto auto;
 }
+
 /*------------------------------Logo------------------------------*/
 .logo {
   padding: 10px 70px;
@@ -65,10 +65,16 @@ header {
   margin-left: 300px;
 }
 
+/*------------------------------Width-Height------------------------------*/
+.width-height {
+  width: 900px;
+  height: 600px;
+}
+
 /*----------------------------------------Card-Normal----------------------------------------*/
 .card-normal {
   display: grid;
-  padding-top: 200px;
+  padding-top: 240px;
   align-items: center;
   justify-content: left;
   grid-template: auto / auto auto;
@@ -79,7 +85,7 @@ header {
   font-size: 50px;
   color: #f5cb5c;
   word-spacing: -7px;
-  margin-left: 60px;
+  margin-left: 50px;
   margin-right: -70px;
   transform: rotate(270deg);
 }
@@ -110,8 +116,6 @@ header {
 
 /*------------------------------Image-Normal------------------------------*/
 .image-normal {
-  width: 900px;
-  height: 600px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -122,7 +126,7 @@ header {
 /*----------------------------------------Card-Blur----------------------------------------*/
 .card-blur {
   display: grid;
-  padding-top: 250px;
+  padding-top: 200px;
   justify-content: center;
   grid-template: auto auto / auto;
 }
@@ -153,8 +157,6 @@ header {
 
 /*------------------------------Image-Blur------------------------------*/
 .image-blur {
-  width: 900px;
-  height: 600px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -173,8 +175,6 @@ header {
 
 /*------------------------------Image-Gray------------------------------*/
 .image-gray {
-  width: 900px;
-  height: 600px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -188,7 +188,7 @@ header {
   color: #333533;
   word-spacing: -8px;
   margin-left: -100px;
-  margin-right: 40px;
+  margin-right: 25px;
   transform: rotate(90deg);
 }
 
@@ -235,6 +235,8 @@ footer {
   width: 1000px;
   height: 60px;
   display: grid;
+  padding: 10px;
+  text-align: center;
   margin: 100px auto;
   align-items: center;
   justify-content: center;
@@ -468,7 +470,7 @@ a:hover {
 }
 
 .eighth-part .second {
-  font-family: 'Pridi', serif;
+  font-family: "Pridi", serif;
 }
 
 .eighth-part .third {
@@ -477,7 +479,7 @@ a:hover {
 }
 
 .eighth-part .fourth {
-  font-family: "Aclonica", sans-serif;;
+  font-family: "Aclonica", sans-serif;
 }
 
 .eighth-part .fifth {
@@ -512,4 +514,301 @@ a:hover {
 
 .ninth-part .fourth {
   font-size: 35px;
+}
+
+/*---------------------------------------------Responsiveness---------------------------------------------*/
+@media screen and (max-width: 1200px) {
+  /*------------------------------Refresh------------------------------*/
+  .refresh {
+    margin-left: 150px;
+  }
+
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 700px;
+    height: 466px;
+  }
+
+  /*----------------------------------------Footer----------------------------------------*/
+  footer {
+    width: 850px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/background2.png");
+  }
+
+  /*------------------------------Refresh------------------------------*/
+  .refresh {
+    margin-left: 50px;
+  }
+
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 500px;
+    height: 333px;
+  }
+
+  /*----------------------------------------Card-Normal----------------------------------------*/
+  .card-normal {
+    padding-top: 260px;
+  }
+
+  /*----------------------------------------Footer----------------------------------------*/
+  footer {
+    width: 620px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/background3.png");
+  }
+
+  /*------------------------------Logo------------------------------*/
+  .logo {
+    width: 300px;
+    height: 200px;
+    padding: 70px;
+  }
+
+  /*------------------------------Refresh------------------------------*/
+  .refresh {
+    margin-left: -20px;
+  }
+
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 400px;
+    height: 266px;
+  }
+
+  /*----------------------------------------Card-Normal----------------------------------------*/
+  .card-normal {
+    padding-top: 150px;
+    justify-content: center;
+    grid-template: auto auto / auto;
+  }
+
+  /*------------------------------Title-Normal------------------------------*/
+  .title-normal {
+    margin: auto;
+    color: #333533;
+    text-align: center;
+    transform: rotate(0deg);
+  }
+
+  /*------------------------------Title-Blur------------------------------*/
+  .title-blur {
+    text-align: center;
+  }
+
+  /*----------------------------------------Card-Gray----------------------------------------*/
+  .card-gray {
+    justify-content: center;
+    grid-template: auto auto / auto;
+  }
+
+  /*------------------------------Title-Gray------------------------------*/
+  .title-gray {
+    margin: auto;
+    transform: rotate(0deg);
+  }
+
+  /*----------------------------------------Footer----------------------------------------*/
+  footer {
+    width: 330px;
+    height: 70px;
+    margin: 150px auto;
+  }
+
+  /*------------------------------Text-Footer------------------------------*/
+  .text-footer {
+    word-spacing: -1px;
+  }
+
+  /*------------------------------Parts------------------------------*/
+  .first-part {
+    font-size: 15px;
+  }
+  .first-part .first {
+    font-size: 25px;
+  }
+  .first-part .fifth {
+    font-size: 20px;
+  }
+
+  .second-part {
+    font-size: 15px;
+  }
+
+  .third-part {
+    font-size: 15px;
+  }
+  .third-part .first {
+    font-size: 25px;
+  }
+  .third-part .second {
+    font-size: 15px;
+  }
+
+  .fourth-part {
+    font-size: 15px;
+  }
+  .fourth-part .first {
+    font-size: 25px;
+  }
+
+  .fifth-part {
+    font-size: 15px;
+  }
+  .fifth-part .fourth {
+    font-size: 20px;
+  }
+
+  .sixth-part {
+    font-size: 15px;
+  }
+
+  .seventh-part {
+    font-size: 15px;
+  }
+  .seventh-part .first {
+    font-size: 25px;
+  }
+  .seventh-part .fifth {
+    font-size: 20px;
+  }
+
+  .eighth-part {
+    font-size: 15px;
+  }
+  .eighth-part .first {
+    font-size: 25px;
+  }
+  .eighth-part .third {
+    font-size: 20px;
+  }
+  .eighth-part .sixth {
+    font-size: 20px;
+  }
+
+  .ninth-part {
+    font-size: 15px;
+  }
+  .ninth-part .first {
+    font-size: 20px;
+  }
+  .ninth-part .second {
+    font-size: 25px;
+  }
+  .ninth-part .third {
+    font-size: 25px;
+  }
+  .ninth-part .fourth {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /*----------------------------------------Header----------------------------------------*/
+  header {
+    justify-content: center;
+    grid-template: auto auto / auto;
+  }
+
+  /*------------------------------Logo------------------------------*/
+  .logo {
+    padding: 5px auto;
+  }
+
+  /*------------------------------Refresh------------------------------*/
+  .refresh {
+    margin: auto;
+  }
+
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 300px;
+    height: 200px;
+  }
+
+  /*----------------------------------------Card-Normal----------------------------------------*/
+  .card-normal {
+    padding-top: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("../assets/background4.png");
+  }
+
+  /*------------------------------Logo------------------------------*/
+  .logo {
+    width: 250px;
+    padding: 50px 5px;
+  }
+
+  /*------------------------------Refresh------------------------------*/
+  .refresh {
+    padding: 50px 5px;
+  }
+
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 250px;
+    height: 166px;
+  }
+
+  /*------------------------------Title-Normal------------------------------*/
+  .title-normal {
+    font-size: 40px;
+  }
+
+  /*------------------------------Title-Blur------------------------------*/
+  .title-blur {
+    font-size: 40px;
+    word-spacing: -6px;
+  }
+
+  /*------------------------------Title-Gray------------------------------*/
+  .title-gray {
+    font-size: 40px;
+    word-spacing: -6px;
+  }
+  .title-gray .third {
+    font-size: 30px;
+  }
+  .title-gray .seventh {
+    font-size: 30px;
+  }
+
+  /*----------------------------------------Footer----------------------------------------*/
+  footer {
+    width: 175px;
+    height: 150px;
+  }
+
+  /*------------------------------Fifth-Part------------------------------*/
+  /*------------------------------USING------------------------------*/
+  .fifth-part {
+    margin: 0px 5px 0px 35px;
+  }
+
+  /*------------------------------Sixth-Part------------------------------*/
+  /*------------------------------THE------------------------------*/
+  .sixth-part {
+    margin: 0px 35px 0px 5px;
+  }
 }
