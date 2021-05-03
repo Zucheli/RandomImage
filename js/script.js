@@ -10,6 +10,8 @@ const ImageGray = document.getElementById("image-gray");
 const LinkGray = document.getElementById("link-gray");
 const TextGray = document.getElementById("text-gray");
 
+const WidthHeight = document.getElementsByClassName("width-height");
+
 const min = 0;
 const max = 1090;
 
@@ -36,7 +38,8 @@ function getLinkImage(id) {
       LinkGray.href = results[2].config.url;
     })
     .catch(function (e) {
-      e = "Por favor, clique aqui para recarregar as imagens ou clique no botão de refresh no topo da página!";
+      e =
+        "Por favor, clique aqui para recarregar as imagens ou clique no botão de refresh no topo da página!";
       TextNormal.innerHTML = e;
       TextBlur.innerHTML = e;
       TextGray.innerHTML = e;
@@ -50,5 +53,7 @@ function getLinkImage(id) {
 }
 
 function loremPicsum(id, param) {
-  return axios.get(`https://picsum.photos/id/${id}/900/600${param}`);
+  return axios.get(
+    `https://picsum.photos/id/${id}/${WidthHeight[0].clientWidth}/${WidthHeight[0].clientHeight}${param}`
+  );
 }
