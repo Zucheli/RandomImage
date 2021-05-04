@@ -33,6 +33,8 @@ font-family: 'Yeseva One', cursive;
 }
 
 body {
+  background-size: cover;
+  background-repeat: no-repeat;
   background-image: url("../assets/background.png");
 }
 
@@ -51,18 +53,10 @@ body {
 /*----------------------------------------Header----------------------------------------*/
 header {
   display: grid;
+  padding-top: 50px;
   align-items: center;
+  justify-content: space-around;
   grid-template: auto / auto auto;
-}
-
-/*------------------------------Logo------------------------------*/
-.logo {
-  padding: 10px 70px;
-}
-
-/*------------------------------Refresh------------------------------*/
-.refresh {
-  margin-left: 300px;
 }
 
 /*------------------------------Width-Height------------------------------*/
@@ -74,7 +68,7 @@ header {
 /*----------------------------------------Card-Normal----------------------------------------*/
 .card-normal {
   display: grid;
-  padding-top: 240px;
+  padding-top: 200px;
   align-items: center;
   justify-content: left;
   grid-template: auto / auto auto;
@@ -167,7 +161,7 @@ header {
 /*----------------------------------------Card-Gray----------------------------------------*/
 .card-gray {
   display: grid;
-  padding-top: 250px;
+  padding-top: 200px;
   align-items: center;
   justify-content: right;
   grid-template: auto / auto auto;
@@ -237,7 +231,7 @@ footer {
   display: grid;
   padding: 10px;
   text-align: center;
-  margin: 100px auto;
+  margin: 200px auto;
   align-items: center;
   justify-content: center;
   box-shadow: 5px 5px 10px #333533aa;
@@ -517,12 +511,31 @@ a:hover {
 }
 
 /*---------------------------------------------Responsiveness---------------------------------------------*/
-@media screen and (max-width: 1200px) {
-  /*------------------------------Refresh------------------------------*/
-  .refresh {
-    margin-left: 150px;
+@media screen and (min-width: 2500px) {
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 2000px;
+    height: 1333px;
   }
+}
 
+@media screen and (min-width: 2000px) and (max-width: 2500px) {
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 1500px;
+    height: 1000px;
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px) {
+  /*------------------------------Width-Height------------------------------*/
+  .width-height {
+    width: 1200px;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   /*------------------------------Width-Height------------------------------*/
   .width-height {
     width: 700px;
@@ -541,11 +554,6 @@ a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url("../assets/background2.png");
-  }
-
-  /*------------------------------Refresh------------------------------*/
-  .refresh {
-    margin-left: 50px;
   }
 
   /*------------------------------Width-Height------------------------------*/
@@ -573,16 +581,16 @@ a:hover {
     background-image: url("../assets/background3.png");
   }
 
-  /*------------------------------Logo------------------------------*/
-  .logo {
-    width: 300px;
-    height: 200px;
-    padding: 70px;
+  /*----------------------------------------Header----------------------------------------*/
+  header {
+    justify-items: center;
+    justify-content: center;
+    grid-template: auto auto / auto;
   }
 
-  /*------------------------------Refresh------------------------------*/
-  .refresh {
-    margin-left: -20px;
+  /*------------------------------Logo------------------------------*/
+  .logo {
+    margin-bottom: 50px;
   }
 
   /*------------------------------Width-Height------------------------------*/
@@ -719,20 +727,9 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
-  /*----------------------------------------Header----------------------------------------*/
-  header {
-    justify-content: center;
-    grid-template: auto auto / auto;
-  }
-
   /*------------------------------Logo------------------------------*/
   .logo {
-    padding: 5px auto;
-  }
-
-  /*------------------------------Refresh------------------------------*/
-  .refresh {
-    margin: auto;
+    width: 400px;
   }
 
   /*------------------------------Width-Height------------------------------*/
@@ -757,12 +754,6 @@ a:hover {
   /*------------------------------Logo------------------------------*/
   .logo {
     width: 250px;
-    padding: 50px 5px;
-  }
-
-  /*------------------------------Refresh------------------------------*/
-  .refresh {
-    padding: 50px 5px;
   }
 
   /*------------------------------Width-Height------------------------------*/
