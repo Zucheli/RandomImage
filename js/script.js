@@ -25,7 +25,7 @@ function getRandomImage() {
 function getLinkImage(id) {
   Promise.all([
     loremPicsum(id, ""),
-    loremPicsum(id, "?blur=4"),
+    loremPicsum(id, "?blur=3"),
     loremPicsum(id, "?grayscale"),
   ])
     .then(function (results) {
@@ -39,7 +39,7 @@ function getLinkImage(id) {
     })
     .catch(function (e) {
       e =
-        "Por favor, clique aqui para recarregar as imagens ou clique no botão de refresh no topo da página!";
+        "Please click here to reload the images or click the refresh button at the top of the page!";
       TextNormal.innerHTML = e;
       TextBlur.innerHTML = e;
       TextGray.innerHTML = e;
